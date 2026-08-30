@@ -21,6 +21,9 @@
     --strip:rgba(253,251,245,0.80);
   }
   *,*::before,*::after{box-sizing:border-box}
+  /* stop the rubber-band bounce past the ends - with a fixed background,
+     the overscroll makes the strip visibly detach from the scene */
+  html,body{overscroll-behavior:none}
   html{-webkit-text-size-adjust:100%;background:#a9d7ea}
   body{
     margin:0;color:var(--ink);
